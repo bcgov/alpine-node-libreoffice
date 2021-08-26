@@ -1,4 +1,4 @@
-# Alpine Node LibreOffice
+# Alpine Node LibreOffice [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE) [![img](https://img.shields.io/badge/Lifecycle-Stable-97ca00)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md)
 
 [![version](https://img.shields.io/docker/v/bcgovimages/alpine-node-libreoffice.svg?sort=semver)](https://hub.docker.com/r/bcgovimages/alpine-node-libreoffice)
 [![pulls](https://img.shields.io/docker/pulls/bcgovimages/alpine-node-libreoffice.svg)](https://hub.docker.com/r/bcgovimages/alpine-node-libreoffice)
@@ -14,11 +14,6 @@ This image is part of a [group of common components](https://github.com/bcgov/co
 ## What Does it Do?
 
 This Image provides a minimal Linux environment and LibreOffice, used by our Common Document Generation Service ([bcgovimages/common-document-generation-service](https://hub.docker.com/repository/docker/bcgovimages/common-document-generation-service)) to run the popular Express framework and Carbone JS library.
-
-### References
-
-- Common Document Generation Service: [https://hub.docker.com/repository/docker/bcgovimages/common-document-generation-service](https://hub.docker.com/repository/docker/bcgovimages/common-document-generation-service)
-- Get help with your project from the Common Services Team: [https://github.com/bcgov/common-services-team-library](https://github.com/bcgov/common-services-team-library)
 
 ## Documentation
 
