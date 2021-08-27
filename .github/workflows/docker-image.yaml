@@ -20,7 +20,7 @@ jobs:
     needs: docker-build
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    if: github.event != 'pull_request'
+    if: github.event_name != 'pull_request'
     steps:
       - name: Checkout
         uses: actions/checkout@v2
