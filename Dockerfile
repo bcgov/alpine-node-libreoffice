@@ -1,6 +1,6 @@
 # We want to stick with the lts-alpine tag, but need to ensure we explicitly track base images
 # FROM docker.io/node:lts-alpine
-FROM docker.io/node:16.13.1-alpine
+FROM docker.io/node:16.15.0-alpine
 
 ARG APP_ROOT=/opt/app-root/src
 ENV NO_UPDATE_NOTIFIER=true \
