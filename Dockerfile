@@ -1,6 +1,6 @@
 # We want to stick with the lts-alpine tag, but need to ensure we explicitly track base images
 # FROM docker.io/node:lts-alpine
-FROM docker.io/node:18.18.0-alpine
+FROM docker.io/node:18.18.2-alpine
 
 ARG APP_ROOT=/opt/app-root/src
 ENV NO_UPDATE_NOTIFIER=true \
@@ -23,3 +23,7 @@ RUN apk --no-cache add msttcorefonts-installer fontconfig && \
 COPY support ${APP_ROOT}/support
 RUN chmod a+rx ${APP_ROOT}/support/bindPython.sh \
   && ${APP_ROOT}/support/bindPython.sh
+
+# NPM Permission Fix
+RUN mkdir -p /.npm
+RUN chown -R 1001:0 /.npm
